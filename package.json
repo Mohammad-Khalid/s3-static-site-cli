@@ -1,0 +1,54 @@
+{
+  "name": "aws-s3-static-site-cli",
+  "version": "0.0.1",
+  "bin": {
+    "aws-s3": "./bin/cli.js"
+  },
+  "description": "AWS S3 Command Line Interface",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --timeout 0 --reporter spec",
+    "preinstall": "node check-version.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mohammad-Khalid/s3-static-site-cli.git"
+  },
+  "keywords": [
+    "S3",
+    "S3 bucket",
+    "bucket",
+    "s3 static site host",
+    "s3 static"
+  ],
+  "author": "Khalid",
+  "preferGlobal": true,
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Mohammad-Khalid/s3-static-site-cli/issues"
+  },
+  "homepage": "https://github.com/Mohammad-Khalid/s3-static-site-cli#readme",
+  "dependencies": {
+    "aws-sdk": "^2.429.0",
+    "chalk": "^2.4.2",
+    "clear": "^0.1.0",
+    "figlet": "^1.2.1",
+    "inquirer": "^6.2.1",
+    "lodash": "^4.17.11",
+    "mime": "^2.4.0",
+    "minimist": "^1.2.0",
+    "ora": "^3.0.0",
+    "pretty-json-stringify": "0.0.2"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "*"
+  },
+  "engines": {
+    "node": ">=8.10.0"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  }
+}
