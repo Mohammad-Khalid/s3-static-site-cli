@@ -1,5 +1,5 @@
 {
-  "name": "aws-s3-static-site-cli",
+  "name": "s3-website-cli",
   "version": "0.0.1",
   "bin": {
     "aws-s3": "./bin/cli.js"
