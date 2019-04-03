@@ -7,7 +7,7 @@ module.exports = async (args) => {
 
   try {
     const profile = args.profile || "default";
-    const buckets = await s3.listS3Buckets(profile);
+    const buckets = await s3.listBucket(profile);
 
     await spinner.stop();
     

@@ -23,12 +23,24 @@ module.exports = () => {
       require('./cmd/init')(args)
       break
 
-    case 'list':
-      require('./cmd/list')(args)
+    case 'list-bucket':
+      require('./cmd/list-bucket')(args)
       break
 
-    case 'static-site':
-      require('./cmd/static-site')(args)
+    case 'upload-website':
+      require('./cmd/upload-website')(args)
+      break
+
+    case 'add-website':
+      require('./cmd/add-website')(args)
+      break
+
+    case 'delete-website':
+      require('./cmd/delete-website')(args)
+      break
+
+    case 'delete-bucket':
+      require('./cmd/delete-bucket')(args)
       break
 
     case 'version':

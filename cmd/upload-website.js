@@ -23,7 +23,7 @@ module.exports = async (args) => {
               fullPath = `${path.resolve(dirPath)}`
 
 
-        const siteUrl = await s3.hostStaticSite(profile, bucket, fullPath);
+        const siteUrl = await s3.uploadWebsite(profile, bucket, fullPath);
 
         await spinner.stop();
 

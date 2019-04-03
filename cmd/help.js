@@ -4,73 +4,50 @@ const figlet = require('figlet');
 
 //TODO: finish the help screen
 const menus = {
-  main: `S3 Bucket CLI
-  Usage:
+  'main': `S3 Bucket CLI
+   Usage:
     aws-s3 [command] <options>
-    init ............... configure auth setting
-    list ............... list existing buckets
-    create ............. create a new assistant
-    update ............. update an assistant
-    delete ............. delete an assistant
-    export ............. export assistant schema 
-    import ............. import Dialogflow Agent Backup Zip File
-    simulate ........... sending a message to the custom channel endpoint
-    field .............. bulk uploading field values
+    init ...................... configure auth setting
+    list-bucket ............... list existing buckets
+    upload-website ............ upload website to S3 bucket
+    add-website ............ add website to S3 bucket
+    delete-website ............ delete website from S3 bucket
+    delete-bucket ............ delete bucket from S3
     version ............ get package version
     help ............... get help menu for a command`,
 
-  list: `  Usage:
-    ta list <options>
-  Options:
-    --credentials, -c ...... [optional] credentials name`,
+  'list-bucket': `  Usage:
+    aws-s3 list-bucket <options>
+    Options:
+    --profile ...... [optional] profile name`,
 
-  create: `  Usage:
-    ta create <options>
-  Options:
-    --schema, -s ........... [option] Autopilot Schema File,
-    --credentials, -c ...... [optional] credentials name`,
+  'upload-website': `  Usage:
+    aws-s3 upload-website <options>
+    Options:
+    --bucket ........... S3 Bucket name,
+    -- dir ............. upload directory/file path
+    --profile .......... [optional] profile name`,
 
-  update: `  Usage:
-    ta update <options>
-  Options:
-    --schema, -s ........... Autopilot Schema File
-    --credentials, -c ...... [optional] credentials name`,
+  'add-website': `  Usage:
+    aws-s3 add-website <options>
+    Options:
+    --bucket ........... S3 Bucket name,
+    --profile ...... [optional] profile name`,
 
-  delete: `  Usage:
-    ta delete <options>
-  Options:
-    --assistant, -a ........ Twilio Autopilot Assistant SID
-    --credentials, -c ...... [optional] credentials name`,
+  'delete-website': `  Usage:
+    aws-s3 delete-website <options>
+    Options:
+    --bucket ........... S3 Bucket name,
+    --profile ...... [optional] profile name`,
 
-  export: `  Usage:
-    ta export <options>
-  Options:
-    --credentials, -c ...... [optional] credentials name`,
+  'delete-bucket': `  Usage:
+    aws-s3 delete-bucket <options>
+    Options:
+    --bucket ........... S3 Bucket name,
+    --profile ...... [optional] profile name`,
 
-  import: `  Usage:
-    ta import <options>
-  Options:
-    --dfbackup ............. Dialogflow Agent Backup Zip File,
-    --dfagent .............. Dialogflow Agent Name
-    --credentials, -c ...... [optional] credentials name`,
-
-  channel: `  Usage:
-    ta simulate <options>
-  Options:
-    --assistant ............ Twilio Autopilot Assistant SID,
-    --text ................. User text input, 
-    --credentials, -c ...... [optional] credentials name`,
-
-  field: `  Usage:
-    ta channel <options>
-  Options:
-    --assistant ............ Twilio Autopilot Assistant SID,
-    --field ................ field type SID,
-    --csv .................. CSV file, 
-    --credentials, -c ...... [optional] credentials name`,
-
-  version: `  Usage:
-    ta version `,
+  'version': `  Usage:
+    aws-s3 version `,
 }
 
 module.exports = (args) => {
@@ -83,7 +60,7 @@ module.exports = (args) => {
 
     console.log(
       chalk.red(
-        figlet.textSync('Twilio Autopilot', { horizontalLayout: 'full' })
+        figlet.textSync('S3 Static Site Hosting', { horizontalLayout: 'full' })
       )
     )
 
