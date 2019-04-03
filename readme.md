@@ -5,7 +5,10 @@ A command line interface for managing S3 Static Site.
 After installing you'll be able to:
 
 * List S3 Buckets
-* Upload Your Static Site on S3
+* Upload Your Website on S3 bucket
+* Add Website to your existing S3 bucket
+* Delete Website from S3 bucket
+* Delete Bucket from S3
 
 ## Installation
 
