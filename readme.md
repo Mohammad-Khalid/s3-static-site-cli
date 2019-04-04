@@ -12,7 +12,7 @@ After installing you'll be able to:
 
 ## Installation
 
-  `sudo npm install -g aws-s3-static-site-cli`
+  `sudo npm install -g s3-website-cli`
   
 ## Usage
 
