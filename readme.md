@@ -39,3 +39,24 @@ To configure the CLI with your AWS credentials run the following command: `$ aws
 
 The first set of credentials you provide will become your 'default' profile. You can add additional profiles or update an existing profile by running the following command: `$ aws-s3 init --profile test-profile` (where 'test-profile' the the profile name you'd like to add/update).
 
+
+## 1. GitHub Stats
+![Your Repository's Stats](https://github-readme-stats.vercel.app/api?username=Mohammad-Khalid&show_icons=true)
+--------------------------------------------------------------------
+## 2. Most Used Languages
+![Your Repository's Stats](https://github-readme-stats.vercel.app/api/top-langs/?username=Mohammad-Khalid&theme=blue-green)
+--------------------------------------------------------------------
+## 3. Contributors Badge
+<a href="https://github.com/Mohammad-Khalid/s3-static-site-cli/graphs/contributors">
+<img src="https://contrib.rocks/image?repo=Mohammad-Khalid/s3-static-site-cli" />
+</a>
+
+Made with [contributors-img](https://contrib.rocks).
+--------------------------------------------------------------------
+## 4. Random Joke Generator
+## 😂 Here is a random joke that'll make you laugh!
+![Jokes Card](https://readme-jokes.vercel.app/api)
+--------------------------------------------------------------------
+## 5. Profile View Counter
+<img src="https://komarev.com/ghpvc/?username=Mohammad-Khalid"/>
+
